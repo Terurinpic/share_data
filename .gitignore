@@ -13,7 +13,10 @@ pubspec.lock
 # If you don't generate documentation locally you can remove this line.
 # doc/api/
 
-# dotenv environment variables file
+# Environment value
+env/.env
+env.dart
+env.g.dart
 .env*
 
 # Avoid committing generated Javascript files:
@@ -75,3 +78,10 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Fvm
+.fvm/flutter_sdk
+
+# keystore
+android/key.properties
+android/app/key.jks
