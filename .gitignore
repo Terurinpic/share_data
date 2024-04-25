@@ -15,6 +15,7 @@ pubspec.lock
 
 # Environment value
 env/.env
+env.dart
 env.g.dart
 .env*
 

@@ -29,6 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.2
+  envied: ^0.5.4+1
   flutter:
     sdk: flutter
   flutter_hooks: ^0.20.5
@@ -36,6 +37,7 @@ dependencies:
   hooks_riverpod: ^2.5.1
 
 dev_dependencies:
+  envied_generator: ^0.5.4+1
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
