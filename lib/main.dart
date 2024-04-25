@@ -1,7 +1,23 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
+
+import 'package:share_data/env/env.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  // Supabase
+  await Supabase.initialize(
+    anonKey: Env.supabaseKey,
+    url: Env.supabaseUrl,
+  );
+  runApp(
+    const ProviderScope(
+      overrides: [],
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
