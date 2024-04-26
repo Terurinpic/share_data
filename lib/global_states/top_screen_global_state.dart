@@ -15,7 +15,7 @@ final topScreenGlobalStateProvider =
 @freezed
 class TopScreenGlobalState with _$TopScreenGlobalState {
   const factory TopScreenGlobalState({
-    @Default(TopScreenType.splash) TopScreenType topScreenType,
+    @Default(TopScreenType.authentication) TopScreenType topScreenType,
     @Default(EdgeInsets.all(0)) EdgeInsets safeAreaPadding,
     @Default(Size(0, 0)) Size screenSize,
   }) = _TopScreenGlobalState;

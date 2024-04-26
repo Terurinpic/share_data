@@ -6,6 +6,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:share_data/const/enum_const.dart';
 import 'package:share_data/env/env.dart';
 import 'package:share_data/global_states/top_screen_global_state.dart';
+import 'package:share_data/screens/authentication/screen.dart';
 import 'package:share_data/screens/splash/screen.dart';
 
 final navigatorKeyProvider = Provider((_) => GlobalKey<NavigatorState>());
@@ -50,6 +51,8 @@ Widget _getTopScreenType({
 }) {
   if (topScreenType == TopScreenType.splash) {
     return const SplashScreen();
+  } else if (topScreenType == TopScreenType.authentication) {
+    return const AuthenticationScreen();
   } else {
     return const SplashScreen();
   }

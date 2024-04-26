@@ -33,6 +33,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_hooks: ^0.20.5
+  font_awesome_flutter: ^10.7.0
   freezed_annotation: ^2.4.1
   hooks_riverpod: ^2.5.1
   supabase_flutter: ^2.5.1
