@@ -3,9 +3,9 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 part 'state_notifier.freezed.dart';
 
-final authenticationStateNotifierProvider =
-    StateNotifierProvider<PurchaseStateNotifier, AuthenticationState>(
-  (ref) => PurchaseStateNotifier(const AuthenticationState()),
+final authenticationStateNotifierProvider = StateNotifierProvider.autoDispose<
+    AuthenticationStateNotifier, AuthenticationState>(
+  (ref) => AuthenticationStateNotifier(const AuthenticationState()),
 );
 
 @freezed
@@ -18,8 +18,8 @@ class AuthenticationState with _$AuthenticationState {
   }) = _AuthenticationState;
 }
 
-class PurchaseStateNotifier extends StateNotifier<AuthenticationState> {
-  PurchaseStateNotifier(super.state);
+class AuthenticationStateNotifier extends StateNotifier<AuthenticationState> {
+  AuthenticationStateNotifier(super.state);
 
   ///
   /// set
