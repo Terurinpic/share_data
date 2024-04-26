@@ -4,6 +4,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import 'package:share_data/components/separate_divider_component.dart';
 import 'package:share_data/const/color_const.dart';
+import 'package:share_data/const/text_style_const.dart';
 import 'package:share_data/main.dart';
 
 final centerTwoDialogProvider = Provider<CenterTwoDialog>(
@@ -22,10 +23,10 @@ class CenterTwoDialog {
     required String contents,
     required String firstButtonTitle,
     required Function() onTapFirstButton,
-    required TextStyle firstTitleStyle,
+    TextStyle firstTitleStyle = TextStyleConst.body14Regular,
     required String secondButtonTitle,
     required Function() onTapSecondButton,
-    required TextStyle secondTitleStyle,
+    TextStyle secondTitleStyle = TextStyleConst.body14Regular,
   }) {
     return showDialog<void>(
       context: _currentContext,
@@ -49,7 +50,12 @@ class CenterTwoDialog {
                   child: Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Center(
-                        child: SingleChildScrollView(child: Text(contents))),
+                      child: SingleChildScrollView(
+                        child: Text(
+                          contents,
+                        ),
+                      ),
+                    ),
                   ),
                 ),
               ),

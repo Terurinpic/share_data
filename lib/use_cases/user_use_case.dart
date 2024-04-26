@@ -19,7 +19,6 @@ class UserUseCase {
   Future<ResultModel<UserModel>> fetchUserModel({
     required String userId,
   }) async {
-    // no row dataの場合（削除済みの場合）
     final result = await _userRepository.fetchUserModel(userId: userId);
     final data = result.data;
     final error = result.errorModel;

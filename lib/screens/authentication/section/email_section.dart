@@ -94,7 +94,7 @@ class EmailSection extends ConsumerWidget {
             if (isLogin) {
               authenticationController.onTapExecuteLoginAccount();
             } else {
-              authenticationController.onTapCreateAccount();
+              authenticationController.onTapExecuteCreateAccount();
             }
           },
           sideColor: ColorConst.colorsBlack,
