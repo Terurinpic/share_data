@@ -20,8 +20,8 @@ class CenterOneDialog {
 
   Future<void> show({
     required String contents,
-    required String buttonTitle,
-    required Function() onTapButton,
+    required String firstButtonTitle,
+    required Function() onTapFirstButton,
     TextStyle titleStyle = TextStyleConst.body14Regular,
   }) {
     return showDialog<void>(
@@ -59,7 +59,7 @@ class CenterOneDialog {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 50),
                 child: GestureDetector(
-                  onTap: onTapButton,
+                  onTap: onTapFirstButton,
                   child: Container(
                     height: 50,
                     width: double.infinity,
@@ -75,7 +75,7 @@ class CenterOneDialog {
                     ),
                     child: Center(
                       child: Text(
-                        buttonTitle,
+                        firstButtonTitle,
                         style: titleStyle,
                       ),
                     ),
