@@ -29,10 +29,12 @@
       ]
     }, 
     "cSpell.words": [
-        "cupertino",
-        "riverpod",
-        "supabase",
-        "todos",
-        "unawaited"
+      "ARGB",
+      "cupertino",
+      "postgrest",
+      "riverpod",
+      "supabase",
+      "todos",
+      "unawaited"
     ]
 }
