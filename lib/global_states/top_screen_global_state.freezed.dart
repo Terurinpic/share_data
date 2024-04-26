@@ -122,7 +122,7 @@ class __$$TopScreenGlobalStateImplCopyWithImpl<$Res>
 
 class _$TopScreenGlobalStateImpl implements _TopScreenGlobalState {
   const _$TopScreenGlobalStateImpl(
-      {this.topScreenType = TopScreenType.authentication,
+      {this.topScreenType = TopScreenType.splash,
       this.safeAreaPadding = const EdgeInsets.all(0),
       this.screenSize = const Size(0, 0)});
 
