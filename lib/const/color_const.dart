@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ColorConst {
-  static const colorsWhite = Color(0xffffffff); // Colors.white
+  static const appColor = Color(0xFF69F0AE); // Colors.greenAccent
+  static const colorsWhite = Color(0xffFFFFFF); // Colors.white
   static const colorsBlack = Color(0xff000000); // Colors.black
   static const colorsGrey = Color(0xFF9E9E9E); // Colors.grey
   static const transparentColor0 = Color.fromARGB(0, 0, 0, 0);
