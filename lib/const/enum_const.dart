@@ -1,5 +1,5 @@
 enum TopScreenType {
   splash,
-  account,
+  authentication,
   groupList,
 }
